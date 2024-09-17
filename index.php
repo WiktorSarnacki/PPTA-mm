@@ -10,9 +10,10 @@
 
 <body>
     <div id="baner">
-        <img src="logo.png" alt="logo">
+        <img src="images.jpg" alt="logo">
         <input type="text" id="szukaj">
-        
+        <input type="button" value="logowanie">
+        <input type="button" value="rejestracja">
     </div>
 </body>
 
