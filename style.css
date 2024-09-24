@@ -3,8 +3,43 @@ body
 
 }
 
-#szukaj
+#search-bar
 {
-    width: 500px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+#akcje
+{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+#logo
+{
+    max-height: 100px;
+}
+
+#login, #register
+{
+    height: 40px;
+    width: 90px;
+}
+
+#footer
+{
+    clear: both;
+    text-align: center;
+}
+#produkt li
+{
+    display: inline;
     
 }
+#produkt
+{
+    clear: both;
+}
+
