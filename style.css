@@ -1,6 +1,6 @@
 body
 {
-
+    background-color: #99B898;
 }
 
 #search-bar
@@ -10,11 +10,20 @@ body
     float: left;
 }
 
+#baner
+{
+    background-color: #ff847c;
+    display: inline-flex;
+    width: 100%;
+}
+
 #akcje
 {
     float: right;
     display: flex;
     align-items: center;
+    background-color: #ff847c;
+    margin-left: auto;
 }
 
 #logo
@@ -28,10 +37,17 @@ body
     width: 90px;
 }
 
+#szukaj
+{
+    padding-right: 80%;
+    padding-top: 30px;
+}
+
 #footer
 {
     clear: both;
     text-align: center;
+    background-color: #2A363B;
 }
 #produkt li
 {
@@ -44,5 +60,6 @@ body
     padding-left: 20%;
     padding-right: 20%;
     text-align: center;
+    background-color: #FECEAB;
 }
 
