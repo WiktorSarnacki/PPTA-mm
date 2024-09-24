@@ -1,6 +1,12 @@
 const productContainer = document.getElementById("product-container")
 const form = document.getElementById("product-form")
 let productNumber = 0
+let name = form.elements["name"]
+let cost = form.elements["cost"]
+let picture = form.elements["picture"]
+let location = form.elements["location"]
+let description = form.elements["description"]
+let condition = form.elements["condition"]
 
 function formAlert(){
     window.alert("Proszę wypełnić formularz!")
@@ -9,22 +15,22 @@ function formAlert(){
 
 function isFormValid(){
     let alertC = 0
-    if(form.elements["name"] == "" && alertC == 0){
+    if(name == "" && alertC == 0){
         formAlert()
         alertC++
-    }else if(form.elements["cost"] == "" && alertC == 0){
+    }else if(cost == "" && alertC == 0){
         formAlert()
         alertC++
-    }else if(form.elements["picture"] == "" && alertC == 0){
+    }else if(picture == "" && alertC == 0){
         formAlert()
         alertC++
-    }else if(form.elements["location"] == "" && alertC == 0){
+    }else if(location == "" && alertC == 0){
         formAlert()
         alertC++
-    }else if(form.elements["description"] == "" && alertC == 0){
+    }else if(description == "" && alertC == 0){
         formAlert()
         alertC++
-    }else if(form.elements["condition"] == "" && alertC == 0){
+    }else if(condition == "" && alertC == 0){
         formAlert()
         alertC++
     }else{
@@ -34,7 +40,9 @@ function isFormValid(){
 
 function addProduct(){
     productNumber++
-    let newProductContainer = document.createElement('div')
+    let newProductContainer = document.createElement('li')
     newProductContainer.className = ("product-" + productNumber)
     productContainer.appendChild(newProductContainer)
+    
+    newProductContainer.innerHTML = `<img src="${picture}" alt="zdjęcie"><h3>${name}</h3>`
 }
