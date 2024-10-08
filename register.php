@@ -6,35 +6,40 @@ $repeatPassword = $_POST['repeat-password'];
 $email = $_POST['email'];
 $adress = $_POST['adress'];
 $number = $_POST['number'];
+$error = 0;
 
+$conn = mysqli_connect("localhost", "root", "", "projektallegro");
+$sql = "INSERT INTO userdata (name, surname, email, adress, number, upassword) VALUES ('$name', '$surname', '$email', '$adress', '$number', '$password')";
 
-$conn = mysqli_connect("localhost", "root", "", "allegro");
-$sql = "SELECT * FROM user;"
+$result = mysqli_query($conn, "SELECT * FROM userdata");
 
-$result = mysqli_query($conn, $sql)
-
-while($row = mysqli_fetch_array($result)){
-    if ($email == $row['email']){
-        die "ERROR, email jest zajęty.\nSpróbuj ponownie";
-        break;
-    }
-    if ($number == $row['number']){
-        die "ERROR, numer telefonu jest już w bazie.\nSpróbuj ponownie";
-        break;
-    }
+// while($row = mysqli_fetch_array($result)){
+//     if($email != $row['email']){
+//         if($number != $row['number']){
+//             if($password != $repeatPassword){
+//                 continue;
+//             }else{
+//                 echo 'ERROR, podane hasła nie są takie same.\nSpróbuj ponownie';
+//                 $error++;
+//                 break;
+//             }
+//         }else{
+//             echo 'ERROR, numer telefonu jest już w bazie.\nSpróbuj ponownie';
+//             $error++;
+//             break;
+//         }
+//     }else{
+//         echo 'ERROR, email jest zajęty.\nSpróbuj ponownie';
+//         $error++;
+//         break;
+//     }
+//}
+if($error == 0){
+    $query = mysqli_query($conn, $sql);
 }
 
-if ($name == ""){
-    die "ERROR, wypełnij cały formularz.";
-}else if ($surname == ""){
-    die "ERROR, wypełnij cały formularz.";
-}else if ($email == ""){
-    die "ERROR, wypełnij cały formularz.";
-}else if ($password == ""){
-    die "ERROR, wypełnij cały formularz.";
-}else if ($repeatPassword == ""){
-    die "ERROR, wypełnij cały formularz.";
-}else if ($repeatPassword != $password){
-    die "ERROR, powtórzone hasło się nie zgadza!";
-}
+$conn -> close();
+header("Location: index.html");
+exit;
+
 
