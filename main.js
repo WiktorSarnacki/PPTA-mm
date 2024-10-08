@@ -46,3 +46,15 @@ function addProduct(){
     
     newProductContainer.innerHTML = `<img src="${picture}" alt="zdjęcie"><h3>${name}</h3>`
 }
+
+//Dodaje sobie te show i hide z jQuery
+$("#login-div").hide();
+$("#register-div").hide();
+
+$("#login-button").onclick(function(){
+    $("#login-div").show();
+})
+
+$("#register-button").onclick(function(){
+    $("#register-div").show();
+})
