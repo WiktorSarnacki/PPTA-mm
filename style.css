@@ -37,8 +37,6 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
     padding-right: 5px;
     padding-bottom: 30px;
     padding-top: 20px; 
-    
-    
 }
 
 #logo
@@ -70,23 +68,16 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
 {
     display: inline;
     
+    
 }
 #produkt
 {
-    margin-left: 50%;
-    text-align: center;
     background-color: #d8dbd9;
-    height: 100px;
     margin-top: 200px;
-    width: 200px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
-
-#produkt img
-{
-    max-width: 200px;
-    max-height: 200px;
-}
-
 #logo {
     padding: 20px;
 }
@@ -131,9 +122,14 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
 h2 {
     padding-top: 10px;
 }
-#formDiv
-{
-    margin-left:30%;
-    margin-right: 30%;
-    text-align: center;
+#prod {
+    max-width: 200px;
+    max-height: 200px;
+    padding: 5px;
+    margin-left: -40px;
+}
+#opis {
+    font-size: 20px;
+    padding: 10px;
+    
 }
