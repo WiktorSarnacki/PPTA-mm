@@ -72,16 +72,27 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
 #produkt
 {
     background-color: #d8dbd9;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    align-items: center;
+    border-radius: 15px;
 }
 
 #produkt img
 {
     max-width: 200px;
+    border-radius: 20px;
+}
+
+#img
+{
+    float: left;
+}
+
+#cena
+{
+    float: right;
 }
 
 #logo {
