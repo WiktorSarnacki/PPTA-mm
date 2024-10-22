@@ -66,8 +66,7 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
 }
 #produkt li
 {
-    display: inline;
-
+    
 }
 #produkt
 {
@@ -76,23 +75,15 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    border-radius: 15px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
 }
 
 #produkt img
 {
     max-width: 200px;
-    border-radius: 20px;
-}
-
-#img
-{
-    float: left;
-}
-
-#cena
-{
-    float: right;
 }
 
 #logo {
@@ -148,5 +139,124 @@ h2 {
 #opis {
     font-size: 20px;
     padding: 10px;
-    
+}
+
+#img img
+{
+    float: inline-start;
+}
+#cena 
+{
+    float: inline-end;
+}
+
+#szukaj {
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #f4ffef;
+}
+#search-button {
+    padding: 15px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 20px;
+    background-color: #2A363B;
+    color:#bec2c4;
+}
+#login {
+    width: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #2A363B;
+    color:#bec2c4;
+    height: 50px;
+    margin-top: -20px;
+}
+#register {
+    width: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #2A363B;
+    color:#bec2c4;
+    height: 50px;
+    margin-top: -20px;
+}
+h2 {
+    padding-top: 10px;
+}
+
+#register-div, #login-div{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    width: 450px;
+    height: 350px;
+    padding: 30px;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27vh;
+    border-radius: 25px;
+    border: 1px solid rgba(109, 109, 109, 0.65);
+    box-shadow: rgba(109, 109, 109, 0.65) 6px 6px 6px;
+    background-color: grey;
+}
+
+#login-div{
+    height: 150px;
+    width: fit-content;
+}
+
+
+#register-div > form > input, #login-div > form > input{
+    height: 25px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#login-div > form{
+    margin:none;
+}
+
+.cool-button1{
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #2A363B;
+    color:#bec2c4;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.cool-button2{
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #2A363B;
+    color:#bec2c4;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.cool-button1:hover, .cool-button2:hover{
+    transition-duration: 0.3s;
+    background-color: #474a4b;
+    color: rgb(126, 255, 126);
+}
+
+#buttons{
+    margin-left: 16%;
 }
