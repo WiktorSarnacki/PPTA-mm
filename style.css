@@ -67,17 +67,23 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
 #produkt li
 {
     display: inline;
-    
-    
+
 }
 #produkt
 {
     background-color: #d8dbd9;
-    margin-top: 200px;
+    margin-top: 20px;
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
+    align-items: center;
 }
+
+#produkt img
+{
+    max-width: 200px;
+}
+
 #logo {
     padding: 20px;
 }
