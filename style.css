@@ -16,14 +16,13 @@ body
 #baner
 {
     background: rgb(232,74,95);
-background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 87%, rgba(7,75,5,1) 98%);
+    background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 87%, rgba(7,75,5,1) 98%);
     background-color: #e84a5f;
     padding-bottom: 30px;
     display: inline-flex;
     width: 100%;
-    z-index: 1;
     top: 0px;
-    position: fixed;
+    margin-bottom: 10px;
 }
 
 #akcje
@@ -65,10 +64,12 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
     height: 100px;
 }
 
-#deskrypcja
+#deskrypcja 
 {
     margin-left: 40%;
 }
+
+
 
 #produkt
 {
@@ -83,10 +84,31 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
     list-style: none;
 }
 
+#tytuł
+{
+    margin-left: 10%;
+}
+
+#cena
+{
+    float: inline-end;
+}
+
 #produkt img
 {
     max-width: 200px;
 }
+
+#koszyk img
+{
+    max-width:70px;
+}
+
+#koszyk
+{
+    float: inline-end;
+}
+
 
 #logo {
     padding: 20px;
@@ -107,49 +129,11 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
     background-color: #2A363B;
     color:#bec2c4;
 }
-#login {
-    width: 100px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 14px;
-    font-size: 15px;
-    background-color: #2A363B;
-    color:#bec2c4;
-    height: 50px;
-    margin-top: -20px;
-}
-#register {
-    width: 100px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 14px;
-    font-size: 15px;
-    background-color: #2A363B;
-    color:#bec2c4;
-    height: 50px;
-    margin-top: -20px;
-}
-h2 {
-    padding-top: 10px;
-}
-#prod {
-    max-width: 200px;
-    max-height: 200px;
-    padding: 5px;
-    margin-left: -40px;
-}
+
+
 #opis {
     font-size: 20px;
     padding: 10px;
-}
-
-#img img
-{
-    float: inline-start;
-}
-#cena 
-{
-    float: inline-end;
 }
 
 #szukaj {
@@ -179,6 +163,7 @@ h2 {
     height: 50px;
     margin-top: -20px;
 }
+
 #register {
     width: 100px;
     border-top-right-radius: 10px;
@@ -200,7 +185,7 @@ h2 {
     font-size: 20px;
     line-height: 40px;
     width: 450px;
-    height: 400px;
+    height: 350px;
     padding: 30px;
     padding-bottom: 25px;
     margin-left: auto;
