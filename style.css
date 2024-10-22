@@ -64,10 +64,12 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
     color: #bec2c4;
     height: 100px;
 }
-#produkt li
+
+#deskrypcja
 {
-    
+    margin-left: 40%;
 }
+
 #produkt
 {
     background-color: #d8dbd9;
@@ -76,7 +78,7 @@ background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 8
     margin-left: 20%;
     margin-right: 20%;
     border-radius: 20px;
-    display: inline-flex;
+    display: inline-table;
     align-items: center;
     list-style: none;
 }
