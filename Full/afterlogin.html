@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+        
+    <div id="baner">
+        <div id="search-bar">
+            <img src="arbuz.png" alt="logo" id="logo">
+            <input type="text" id="szukaj" name="szukaj" placeholder="Czego szukasz?">
+            <input type="button" id="search-button" value="Szukaj">
+        </div>
+    
+        <div id="akcje">
+            <p>Witaj, </p>
+            <img id="user-icon" src="user-icon.png">
+        </div>
+    </div>
+    <div id="register-div">
+            <form action="register.php" method="post">
+                <label>Imie:</label><input type="text" name="name" placeholder="Jan" required><br>
+                <label>Nazwisko:</label><input type="text" placeholder="Nowak" name="surname" required><br>
+                <label>Email:</label><input type="email" placeholder="superEmail@gmail.com" name="email" required><br>
+                <label>Numer telefonu:</label><input type="text" pattern="[0-9]{9}" placeholder="123456789" name="number" required><br>
+                <label>Kod pocztowy:</label><input type="text" pattern="[0-9]{2}-[0-9]{3}" placeholder="XX-XXX" name="adress" required><br>
+                <label>Hasło:</label><input type="password" placeholder="fajneHaslo123" name="password" required><br>
+                <label>Powtórz hasło:</label><input type="password" placeholder="fajneHaslo123" name="repeat-password" required><br>
+                <div id="buttons">
+                    <button type="submit" class="cool-button1">Zarejestruj się</button>
+                    <button type="reset" class="cool-button2" onclick="ShowOrHide(2)">Powrót</button>
+                </div>
+            </form>
+    </div>
+    <div id="login-div">
+            <form action="login.php" method="post">
+                <label>Email:</label><input type="email" placeholder="superEmail@gmail.com" name="email" required><br>
+                <label>Hasło:</label><input type="password" placeholder="fajneHaslo123" name="password" required><br>
+                <button type="submit" class="cool-button1">Zaloguj się</button>
+                <button type="button" class="cool-button2" onclick="ShowOrHide(2)">Powrót</button>
+            </form>
+    </div>
+    <div id="footer">
+        <h2>Autorzy</h2>
+        <h4>Wojtek Żukiewicz, Sarnacki Wiktor, Maciek Małkowski, Adrian Ochman, Jan Uściłko</h4>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
