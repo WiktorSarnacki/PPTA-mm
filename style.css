@@ -23,7 +23,8 @@ body
     width: 100%;
     z-index: 1;
     top: 0px;
-    position: fixed;
+    position: relative;
+
 }
 
 #akcje
@@ -86,15 +87,18 @@ body
 #produkt li
 {
     display: inline;
+    
 }
 #produkt
 {
-    margin-left: 50%;
+    margin-left: 25%;
     text-align: center;
     background-color: #d8dbd9;
     height: 100px;
-    margin-top: 20px;
-    width: 200px;
+    margin-top: 15px;
+    width: 700px;
+    border-radius: 30px;
+    display: inline-flex;
 }
 #logo {
     padding: 20px;
