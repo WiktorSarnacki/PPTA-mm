@@ -1,7 +1,13 @@
 <?php
 session_start();
 
-$conn = mysqli_connect("localhost", "root", "", "projektallegro");
+if (isset($_SESSION['zalogowany'])){
+    if ($_SESSION['zalogowany'] == true){
+        $_SESSION['alrLogged'] = '<span>Jesteś już zalogowany</span>';
+        header("location: index.php");
+    }
+}
+$conn = mysqli_connect("localhost", "root", "", "allegro");
 
 $ok = false;
 
@@ -11,12 +17,12 @@ $ok = false;
 $accVerify = $conn->query("SELECT * FROM userdata WHERE email = '$email' AND upassword = '$password'" );
 
 
-if($accVerify->num_rows<=0){
-    echo '<div style="text-align: center;font-size: 30px">Nie poprawny email lub hasło';
-    echo "<br><a href='index.html'>Powrót na stronę</a></div>";
-}else if($accVerify->num_rows>1){
-    echo '<div style="text-align: center;font-size: 30px">Wystąpił problem podczas logowania</div>';
-    echo "<br><a href='index.html'>Powrót na stronę</a></div>";
+if ($accVerify->num_rows<=0){
+    $_SESSION['loginErr'] = '<span>Nie poprawny email lub hasło</span>';
+    header("location: index.php");
+}elseif($accVerify->num_rows>1){
+    $_SESSION['loginErr2'] = '<span>Wystąpił problem podczas logowania</span>';
+    header("location: index.php");
 }else{
     $ok = true;
 }
@@ -28,6 +34,5 @@ if ($ok){
     $_SESSION['userID'] = $info['id'];
     $_SESSION['name'] = $info['name'];
     $accVerify->free_result();
-    echo "<div style='text-align: center;font-size: 30px;'>Pomyślnie zalogowano";
-    echo "<br><a href='index.html'>Powrót na stronę</a></div>";
+    header("location: index.php");
 }
