@@ -1,0 +1,441 @@
+body
+{
+    background-color: #e6e6e6;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#search-bar
+{
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+#baner
+{
+    background: #e6e6e6;
+    background: linear-gradient(180deg, rgba(232,74,95,1) 50%, rgba(156,229,153,1) 87%, #e6e6e6 98%);
+    background-color: #e6e6e6;
+    padding-bottom: 30px;
+    display: inline-flex;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+    position: fixed;
+}
+
+#akcje
+{
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+    padding-top: 20px; 
+}
+
+#logo
+{
+    max-height: 100px;
+}
+
+#login, #register
+{
+    height: 40px;
+    width: 90px;
+}
+
+#login:hover, #register:hover, #search-button:hover{
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    background-color: #474a4b;
+    color: rgb(126, 255, 126);
+}
+
+#space
+{
+    margin-top: 200px;
+}
+
+#szukaj
+{
+    padding-right: 80%;
+    padding-top: 30px;
+}
+
+#footer
+{
+    text-align: center;
+    background-color: #2A363B;
+    color: #bec2c4;
+    line-height: 30px;
+    font-size: 18px;
+    bottom: -25px;
+    width: 100%;
+    margin-top: auto;
+}
+
+#footer > h4, #footer > h5{
+    margin: none;
+    padding: none;
+}
+
+#produkt
+{
+    margin-left: 33%;
+    background-color: #d8dbd9;
+    margin: 30px;
+    width: 40%;
+    border-radius: 10px;
+    
+
+}
+
+#obraz-produktu, #dane-produktu
+{
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    height: fit-content;
+    padding: 10px;
+}
+
+#dane-produktu
+{
+    width: 400px;
+    height: 200px;
+}
+
+#akcje-produktu
+{
+    text-align: right;
+}
+
+#produkt img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border:solid, #a7abad;
+}
+
+#logo {
+    padding: 20px;
+    max-width: 15vw;
+}
+#szukaj {
+    width: 35vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #f4ffef;
+}
+#search-button {
+    padding: 15px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 20px;
+    background-color: #2A363B;
+    color:#bec2c4;
+}
+#login {
+    width: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #2A363B;
+    color:#bec2c4;
+    height: 50px;
+    margin-top: -20px;
+}
+#register {
+    width: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #2A363B;
+    color:#bec2c4;
+    height: 50px;
+    margin-top: -20px;
+}
+#platnosc {
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #2A363B;
+    color:#bec2c4;
+    height: 50px;
+    margin-top: -20px;
+}
+h2 {
+    padding-top: 10px;
+}
+
+#register-div, #login-div, #addProduct-div, #platnosc{
+    color: white;
+    font-weight: 500;
+    line-height: 40px;
+    width: 450px;
+    padding: 30px;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27vh;
+    border-radius: 10px;
+    border: 1px solid rgba(26, 26, 26, 0.65);
+    background-color: #2A363B;
+    z-index: 3;
+    position: fixed;
+}
+#anuuj {
+    float: right;
+    margin-top: -65px;
+    margin-right: 72px;
+    
+}
+
+#register-div
+{
+    top: 0;
+    left: 35%;
+    height: 370px;
+}
+
+#login-div{
+    height: 160px;
+    width: fit-content;
+    top: 15%;
+    left: 40%;
+}
+
+
+#register-div > form > input, #login-div > form > input{
+    height: 25px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#login-div > form{
+    margin:none;
+}
+
+.cool-button1{
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #bec2c4;
+    color:#2A363B;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.cool-button2{
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #bec2c4;
+    color:#2A363B;
+    height: 50px;
+    margin-top: 15px;
+}
+.cool-button11{
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #bec2c4;
+    color:#2A363B;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 72px;
+}
+
+.cool-button22{
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #bec2c4;
+    color:#2A363B;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.cool-button1:hover, .cool-button2:hover, .cool-button11:hover, .cool-button22:hover{
+    transition-duration: 0.3s;
+    background-color: #474a4b;
+    color: rgb(126, 255, 126);
+}
+
+#buttons{
+    margin-left: 16%;
+}
+#user-icon {
+    margin: auto;
+    max-width: 5vw;
+}
+
+#error{
+    font-size: 15px;
+    color: red;
+}
+
+#user
+{
+    float: right;
+    margin-left: 10%;
+}
+
+#wyloguj
+{
+    right: 0;
+    position: fixed;
+    float: right;
+    z-index: 20;
+}
+#cart
+{
+    float: right;
+}
+
+#cart-button
+{
+    border: none;
+    background-color: transparent;
+}
+
+#akcje-konta
+{
+    display: flex;
+    z-index: 10;
+    right: 0;
+}
+
+#cartimg
+{
+    max-width: 10vw;
+    width: 50%;
+    padding: 10px;
+}
+
+#cartedit
+{
+    display: flex;
+    justify-content: center;
+}
+
+#ilosc, #usun, #zmien{
+
+    margin-left: 10px;
+    text-align: center;
+    width: auto;
+}
+
+#addProduct-button
+{
+    border: none;
+    background-color: transparent;
+}
+
+#addProductimg{
+    max-width: 5vw;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    font-family: sans-serif;
+    margin: 10px auto;
+    height: 100px;
+}
+
+#addProduct-div
+{
+    top: 0;
+    left: 35%;
+    height: 370px;
+    
+}
+#platnosc
+{
+    top: 0;
+    left: 35%;
+    height: 260px;
+}
+#prod_title {
+    padding: 10px;
+}
+#button-koszyk {
+        width: 200px;
+        border-radius: 10px;
+        padding: 14px;
+        font-size: 15px;
+        background-color: #2A363B;
+        color:#bec2c4;
+        height: 50px;
+        margin: 10px;
+        float: left;
+}
+#button-wkoszu1, #button-wkoszu2 {
+    padding: 14px;
+    font-size: 15px;
+    background-color: #2A363B;
+    color:#bec2c4;
+    height: 50px;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: -50px
+    
+}
+#button-wkoszu1 {
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 2px;
+}
+#button-wkoszu2 {
+    width: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 2px;
+}
+#greet {
+    text-align: center;
+    font-weight: bold;
+}
+#greetMsg {
+    margin-left: 25%;
+}
+#logout {
+    width: 250px;
+    margin: 10px;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #2A363B;
+    color:#bec2c4;
+    height: 50px;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
