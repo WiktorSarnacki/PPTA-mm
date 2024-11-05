@@ -106,11 +106,11 @@ if(isset($_SESSION['zalogowany'])){
 
 <div id="space"></div>
     <div id="baner">
-        <div id="search-bar">
-        <a href="index.php"><img src="arbuz.png" alt="logo" id="logo"></a>
+        <form id="search-bar" method="get">
+            <a href="index.php"><img src="arbuz.png" alt="logo" id="logo"></a>
             <input type="text" id="szukaj" name="szukaj" placeholder="Czego szukasz?">
-            <input type="button" id="search-button" value="Szukaj">
-        </div>
+            <input type="submit" id="search-button" name="search-button" value="Szukaj">  
+        </form>
 
         <div id="greetMsg">
             <?php
@@ -164,7 +164,14 @@ if(isset($_SESSION['zalogowany'])){
     ?>
 
     <?php
-        $result = $conn->query('SELECT * FROM produkty');
+         if(isset($_GET['search-button'])){
+            if(isset($_GET['szukaj'])){
+                $result = $conn->query('SELECT * FROM produkty WHERE prod_name LIKE "%'.$_GET['szukaj'].'%"');
+            }
+        }else
+        {
+            $result = $conn->query('SELECT * FROM produkty');
+        }
         while ($rows = $result->fetch_assoc()){
             echo "<div id='produkt'>";
             echo "<div id='obraz-produktu'>";
